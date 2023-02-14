@@ -23,21 +23,22 @@ list.insertAdjacentHTML("beforeend", element);
 const items = list.querySelectorAll("li");
 items.forEach((item) => {
   item.classList.add("gallery__item");
-  item.style.width = "calc((100% - 40px) / 3)";
+  // item.style.width = "calc((100% - 40px) / 3)";
 });
 
 
 const styleImgs = list.querySelectorAll("img");
 styleImgs.forEach((img) => {
   img.classList.add("gallery__image");
-  img.style.width = "100%";
-  img.style.height = "100%";
-  img.style.objectFit = "cover";
+  // img.style.width = "100%";
+  // img.style.height = "100%";
+  // img.style.objectFit = "cover";
 });
 
-list.style.display = "flex";
-list.style.flexWrap = "wrap";
-list.style.gap = "20px";
-list.style.listStyle = "none";
+// list.style.display = "flex";
+// list.style.flexWrap = "wrap";
+// list.style.gap = "20px";
+// list.style.listStyle = "none";
 
-
+const head = document.querySelector("head");
+head.innerHTML += `<link rel="stylesheet" href="css/gallery-styles.css" />`;

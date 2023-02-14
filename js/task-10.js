@@ -24,6 +24,7 @@ buttonCreate.addEventListener("click", createBoxes);
 
 function destroyBoxes() {
   divBoxes.textContent = "";
+  input.value = "";
   // const divs = document.querySelectorAll('#boxes div');
   // divs.forEach((div) => {
   //   div.remove();
